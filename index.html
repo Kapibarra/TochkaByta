@@ -1,202 +1,298 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="css/style.css" />
-    <title>Качественный ремонт техники</title>
-  </head>
-  <body>
-    <header>
-      <div class="wrapper">
-        <div class="wrapper-logo">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/style.css" />
+
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg==" crossorigin="anonymous" />
+
+  <title>Качественный ремонт техники</title>
+</head>
+
+<body>
+  <header id="top">
+    <div class="wrapper">
+      <div class="wrapper-logo">
+        <a href="#top">
           <img class="header-logo" src="img/Logo.svg" />
-        </div>
-        <div class="navigation">
-          <div class="nav" href="#"><a>Контакты</a></div>
-          <div class="nav" href="#"><a>Контакты</a></div>
-          <div class="nav" href="#"><a>Контакты</a></div>
-          <div class="nav" href="#"><a>Контакты</a></div>
-        </div>
-        <div class="wrapper-contacts">
-          <div class="wrapper-adress">Ул.Крылатские холмы 35к3</div>
-          <div class="wrapper-phone">8-999-999-99-99</div>
-          <div class="wrapper-worktime">Ежедневно 11:00-21:00</div>
-        </div>
-        <div class="button">
+        </a>
+      </div>
+      <div class="navigation">
+        <div class="nav active"><a href="#o-nas">О нас</a></div>
+        <div class="nav"><a href="#services">Услуги</a></div>
+        <div class="nav"><a href="#otzivi">Отзывы</a></div>
+        <div class="nav"><a href="#footer">Контакты</a></div>
+      </div>
+      <div class="wrapper-contacts">
+        <div class="wrapper-adress">Ул.Крылатские холмы 35к3</div>
+        <div class="wrapper-phone">8-999-999-99-99</div>
+        <div class="wrapper-worktime">Ежедневно 11:00-21:00</div>
+      </div>
+      <div class="button">
+        <button class="request-button">
+          <a class="footerrequest" href="#"> Онлайн запись</a>
+          <img class="button-arrow" src="/img/button_arrow.svg" />
+        </button>
+      </div>
+    </div>
+  </header>
+  <main class="main-article">
+    <div class="main-content">
+      <h1 class="content-title">Качественный ремонт техники</h1>
+      <a class="article-text">
+        Data Warehouse is a data storage area that has been tested for
+        security, so you can store your data here safely but not be afraid of
+        being stolen by others.
+      </a>
+      <a type="button" class="learnmore-button" href="#">Узнать больше</a>
+    </div>
+  </main>
+  <div class="request">
+    <div class="main-request">
+      <img src="/img/request.png" />
+      <div>
+        <div class="request-title">
+          Нужна замена экрана на смартфоне?
+          <p class="request-text">
+            The place to store various data that you can access at any time
+            through the internet and where you can carry it. This very
+            flexible storage area has a high level of security. To enter into
+            your own data you must enter the password that you created when
+            you registered in this Data Warehouse.
+          </p>
           <button class="request-button">
             <a class="footerrequest" href="#"> Онлайн запись</a>
-            <img class="button-arrow" src="/img/button_arrow.svg"/>
+            <img class="button-arrow" src="/img/button_arrow.svg" />
           </button>
         </div>
       </div>
-    </header>
-    <main class="main-article">
-      <div class="main-content">
-        <h1 class="content-title">Качественный ремонт техники</h1>
-        <a class="article-text">
-          Data Warehouse is a data storage area that has been tested for
-          security, so you can store your data here safely but not be afraid of
-          being stolen by others.
-        </a>
-        <a type="button" class="learnmore-button" href="#">Узнать больше</a>
+    </div>
+  </div>
+  <section class="services">
+    <div class="services-title">Наши услуги</div>
+    <div class="services-text">
+      Мы оказываем только качественные услуги в кратикие сроки и заботимся о
+      долговечности произведенных работ.
+    </div>
+
+    <div class="services-conteiner" id="responsiveTab">
+      <ul class="services-navigation">
+        <li type="button" class="services-nav"><a href="#tab-1">Телефоны</a></li>
+        <li type="button" class="services-nav"><a href="#tab-2">Компьютеры</a></li>
+        <li type="button" class="services-nav"><a href="#tab-3">Ноутбуки</a></li>
+        <li type="button" class="services-nav"><a href="#tab-4">Техника</a></li>
+      </ul>
+
+
+      <div class="tab" id="tab-1">
+        <div class="services-top">
+          <div class="servicesblock">
+            <img class="services-img" src="/img/services.png" />
+            <div class="services-discription">
+              <h3>Замена экрана</h3>
+              <a class="services-discription-text">
+                Don’t worry if your data is very large, the Data Warehoue provides
+                a search engine.</a>
+              <h3 class="service-price">От 5000 ₽</h3>
+              <button class="request-button">
+                <a class="footerrequest" href="#"> Онлайн запись</a>
+                <img class="button-arrow" src="/img/button_arrow.svg" />
+              </button>
+            </div>
+          </div>
+          <div class="servicesblock">
+            <img class="services-img" src="/img/services.png" />
+            <div class="services-discription">
+              <h3>Замена экрана</h3>
+              <a class="services-discription-text">
+                Don’t worry if your data is very large, the Data Warehoue provides
+                a search engine.</a>
+              <h3 class="service-price">От 5000 ₽</h3>
+              <button class="request-button">
+                <a class="footerrequest" href="#"> Онлайн запись</a>
+                <img class="button-arrow" src="/img/button_arrow.svg" />
+              </button>
+            </div>
+          </div>
+
+        </div>
+        <div class="services-top">
+          <div class="servicesblock">
+            <img class="services-img" src="/img/services.png" />
+            <div class="services-discription">
+              <h3>Замена экрана</h3>
+              <a class="services-discription-text">
+                Don’t worry if your data is very large, the Data Warehoue provides
+                a search engine.</a>
+              <h3 class="service-price">От 5000 ₽</h3>
+              <button class="request-button">
+                <a class="footerrequest" href="#"> Онлайн запись</a>
+                <img class="button-arrow" src="/img/button_arrow.svg" />
+              </button>
+            </div>
+          </div>
+          <div class="servicesblock">
+            <img class="services-img" src="/img/services.png" />
+            <div class="services-discription">
+              <h3>Замена экрана</h3>
+              <a class="services-discription-text">
+                Don’t worry if your data is very large, the Data Warehoue provides
+                a search engine.</a>
+              <h3 class="service-price">От 5000 ₽</h3>
+              <button class="request-button">
+                <a class="footerrequest" href="#"> Онлайн запись</a>
+                <img class="button-arrow" src="/img/button_arrow.svg" />
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
-    </main>
-    <div class="request">
-      <div class="main-request">
-        <img src="/img/request.png" />
-        <div>
-          <div class="request-title">
-            Нужна замена экрана на смартфоне?
-            <p class="request-text">
-              The place to store various data that you can access at any time
-              through the internet and where you can carry it. This very
-              flexible storage area has a high level of security. To enter into
-              your own data you must enter the password that you created when
-              you registered in this Data Warehouse.
-            </p>
-            <button class="request-button">
-              <a class="footerrequest" href="#"> Онлайн запись</a>
-              <img class="button-arrow" src="/img/button_arrow.svg" />
-            </button>
+
+
+      <div class="tab" id="tab-2">
+        <div class="services-top">
+          <div class="servicesblock">
+            <img class="services-img" src="/img/services.png" />
+            <div class="services-discription">
+              <h3>Замена экрана2</h3>
+              <a class="services-discription-text">
+                Don’t worry if your data is very large, the Data Warehoue provides
+                a search engine.</a>
+              <h3 class="service-price">От 5000 ₽</h3>
+              <button class="request-button">
+                <a class="footerrequest" href="#"> Онлайн запись</a>
+                <img class="button-arrow" src="/img/button_arrow.svg" />
+              </button>
+            </div>
+          </div>
+          <div class="servicesblock">
+            <img class="services-img" src="/img/services.png" />
+            <div class="services-discription">
+              <h3>Замена экрана2</h3>
+              <a class="services-discription-text">
+                Don’t worry if your data is very large, the Data Warehoue provides
+                a search engine.</a>
+              <h3 class="service-price">От 5000 ₽</h3>
+              <button class="request-button">
+                <a class="footerrequest" href="#"> Онлайн запись</a>
+                <img class="button-arrow" src="/img/button_arrow.svg" />
+              </button>
+            </div>
+          </div>
+
+        </div>
+        <div class="services-top">
+          <div class="servicesblock">
+            <img class="services-img" src="/img/services.png" />
+            <div class="services-discription">
+              <h3>Замена экрана</h3>
+              <a class="services-discription-text">
+                Don’t worry if your data is very large, the Data Warehoue provides
+                a search engine.</a>
+              <h3 class="service-price">От 5000 ₽</h3>
+              <button class="request-button">
+                <a class="footerrequest" href="#"> Онлайн запись</a>
+                <img class="button-arrow" src="/img/button_arrow.svg" />
+              </button>
+            </div>
+          </div>
+          <div class="servicesblock">
+            <img class="services-img" src="/img/services.png" />
+            <div class="services-discription">
+              <h3>Замена экрана</h3>
+              <a class="services-discription-text">
+                Don’t worry if your data is very large, the Data Warehoue provides
+                a search engine.</a>
+              <h3 class="service-price">От 5000 ₽</h3>
+              <button class="request-button">
+                <a class="footerrequest" href="#"> Онлайн запись</a>
+                <img class="button-arrow" src="/img/button_arrow.svg" />
+              </button>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <section class="services">
-      <div class="services-title">Наши услуги</div>
-      <div class="services-text">
-        Мы оказываем только качественные услуги в кратикие сроки и заботимся о
-        долговечности произведенных работ.
-      </div>
-      <div class="services-navigation">
-        <a type="button" class="services-nav" href="#">Телефоны</a>
-        <a type="button" class="services-nav" href="#">Компьютеры</a>
-        <a type="button" class="services-nav" href="#">Ноутбуки</a>
-        <a type="button" class="services-nav" href="#">Техника</a>
-      </div>
-      <div class="services-top">
-        <div class="servicesblock">
-          <img class="services-img" src="/img/services.png" />
-          <div class="services-discription">
-            <h3>Замена экрана</h3>
-            <a class="services-discription-text">
-              Don’t worry if your data is very large, the Data Warehoue provides
-              a search engine.</a
-            >
-            <h3 class="service-price">От 5000 ₽</h3>
-            <button class="request-button">
-              <a class="footerrequest" href="#"> Онлайн запись</a>
-              <img class="button-arrow" src="/img/button_arrow.svg" />
-            </button>
-          </div>
-        </div>
-        <div class="servicesblock">
-          <img class="services-img" src="/img/services.png" />
-          <div class="services-discription">
-            <h3>Замена экрана</h3>
-            <a class="services-discription-text">
-              Don’t worry if your data is very large, the Data Warehoue provides
-              a search engine.</a
-            >
-            <h3 class="service-price">От 5000 ₽</h3>
-            <button class="request-button">
-              <a class="footerrequest" href="#"> Онлайн запись</a>
-              <img class="button-arrow" src="/img/button_arrow.svg" />
-            </button>
-          </div>
-        </div>
-      </div>
-      <div class="services-top">
-        <div class="servicesblock">
-          <img class="services-img" src="/img/services.png" />
-          <div class="services-discription">
-            <h3>Замена экрана</h3>
-            <a class="services-discription-text">
-              Don’t worry if your data is very large, the Data Warehoue provides
-              a search engine.</a
-            >
-            <h3 class="service-price">От 5000 ₽</h3>
-            <button class="request-button">
-              <a class="footerrequest" href="#"> Онлайн запись</a>
-              <img class="button-arrow" src="/img/button_arrow.svg" />
-            </button>
-          </div>
-        </div>
-        <div class="servicesblock">
-          <img class="services-img" src="/img/services.png" />
-          <div class="services-discription">
-            <h3>Замена экрана</h3>
-            <a class="services-discription-text">
-              Don’t worry if your data is very large, the Data Warehoue provides
-              a search engine.</a
-            >
-            <h3 class="service-price">От 5000 ₽</h3>
-            <button class="request-button">
-              <a class="footerrequest" href="#"> Онлайн запись</a>
-              <img class="button-arrow" src="/img/button_arrow.svg" />
-            </button>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="reviews">
-      <div class="reviews-main">
-        <div>
-          <h1 class="reviews-title">Отзывы о нашей работе</h1>
-        </div>
-        <div class="reviews-img">
-          <img src="/img/reviewsimg.png" />
-        </div>
-      </div>
-    </section>
-    <section class="map">
+  </section>
+  <section class="reviews">
+    <div class="reviews-main">
       <div>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1300.6372591176212!2d37.41293553451475!3d55.75841631377957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x45512714cc63823e!2z0KLQvtGH0LrQsC3QkdGL0YLQsA!5e0!3m2!1sru!2sru!4v1596717286951!5m2!1sru!2sru"
-          width="1920"
-          height="400"
-          frameborder="0"
-          style="border: 0;"
-          allowfullscreen=""
-          aria-hidden="false"
-          tabindex="0"
-        ></iframe>
+        <h1 class="reviews-title">Отзывы о нашей работе</h1>
       </div>
-    </section>
-    <section class="footer">
-      <div class="footer-logo">
-        <img src="/img/Logo.svg" />
-        <div class="footerblock">
-          <div class="footer-text">
-            <a
-              >Москва, ул. Крылатские холмы 36к1 <br />
-              Ежедневно с 10:00 до 20:00
-            </a>
-          </div>
-          <div class="footer-contacts">
-            info@tocka.bita <br />
-            8 (495) 444-55-66
-          </div>
+      <div class="reviews-img">
+        <img src="/img/reviewsimg.png" />
+        <img src="/img/reviewsimg.png" />
+        <img src="/img/reviewsimg.png" />
+        <img src="/img/reviewsimg.png" />
+      </div>
+    </div>
+  </section>
+  <section class="map">
+    <div>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1300.6372591176212!2d37.41293553451475!3d55.75841631377957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x45512714cc63823e!2z0KLQvtGH0LrQsC3QkdGL0YLQsA!5e0!3m2!1sru!2sru!4v1596717286951!5m2!1sru!2sru"
+        width="100%" height="400" frameborder="0" style="border: 0;" allowfullscreen="" aria-hidden="false"
+        tabindex="0"></iframe>
+    </div>
+  </section>
+  <section class="footer" id="footer">
+    <div class="footer-logo">
+      <img src="/img/Logo.svg" />
+      <div class="footerblock">
+        <div class="footer-text">
+          <a>Москва, ул. Крылатские холмы 36к1 <br />
+            Ежедневно с 10:00 до 20:00
+          </a>
         </div>
-        <div class="footerbtn">
-          <button class="footer-button">
-            <a class="footerrequest" href="#"> Онлайн запись</a>
-            <img class="button-arrow" src="/img/button_arrow.svg" />
-          </button>
-          <button class="footer-button">
-            <a class="footerrequest" href="#"> Онлайн запись</a>
-            <img class="button-arrow" src="/img/button_arrow.svg" />
-          </button>
+        <div class="footer-contacts">
+          info@tocka.bita <br />
+          8 (495) 444-55-66
         </div>
       </div>
-      <div class="copyright">
-        <a class="copyright-text"
-          >© Точка быта™, 2020. Все права защищены.<br />
-          Инн: 21479524.
-        </a>
-        <a>Социальные сети</a>
+      <div class="footerbtn">
+        <button class="footer-button">
+          <a class="footerrequest" href="#"> Онлайн запись</a>
+          <img class="button-arrow" src="/img/button_arrow.svg" />
+        </button>
+        <button class="footer-button">
+          <a class="footerrequest" href="#"> Онлайн запись</a>
+          <img class="button-arrow" src="/img/button_arrow.svg" />
+        </button>
       </div>
-    </section>
-  </body>
+    </div>
+    <div class="copyright">
+      <a class="copyright-text">© Точка быта™, 2020. Все права защищены.<br />
+        Инн: 21479524.
+      </a>
+      <a>Социальные сети</a>
+    </div>
+  </section>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/responsive-tabs@1.6.3/js/jquery.responsiveTabs.js"></script>
+
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $('#responsiveTab').responsiveTabs({
+        rotate: false,
+        startCollapsed: 'accordion',
+        collapsible: 'accordion',
+        setHash: true,
+      });
+      $('.reviews-img').slick();
+    });
+  </script>
+
+
+</body>
+
+
 </html>

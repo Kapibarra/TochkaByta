@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap");
-
 /*body*/
+
 body {
   max-width: 1920px;
   box-sizing: border-box;
@@ -8,6 +8,11 @@ body {
   font-family: Roboto, sans-serif;
   line-height: 1.2;
   margin: 0 auto;
+  color: #333;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 /*Wrapper*/
@@ -17,8 +22,9 @@ body {
   justify-content: space-between;
   align-items: center;
   max-width: 1160px;
-  margin: 0 auto;
+  margin: 21px auto;
 }
+
 .wrapper-logo {
   position: relative;
   display: block;
@@ -29,10 +35,22 @@ body {
   display: flex;
   justify-content: space-between;
 }
+
 .nav {
   display: flex;
   margin-left: 30px;
+  text-decoration: none;
 }
+
+.nav a {
+  text-decoration: none;
+  color: #333333;
+}
+
+.nav.active {
+  font-weight: bold;
+}
+
 .request-button {
   padding-left: 30px;
   width: 210px;
@@ -47,7 +65,9 @@ body {
   font-weight: normal;
   font-size: 18px;
   line-height: 160%;
+  border: none;
 }
+
 .button-arrow {
   padding-left: 15px;
 }
@@ -61,13 +81,16 @@ body {
   margin-top: 101px;
   max-width: 1319px;
   background-image: url(/img/articleimage.png);
-  background-size: cover;
   min-height: 800px;
+  background-repeat: no-repeat;
+  background-position: right;
 }
-.main-content {
+
+/* .main-content {
   background-image: url(/img/articleimage.png);
   background-size: cover;
-}
+} */
+
 .content-title {
   max-width: 658px;
   display: flex;
@@ -75,6 +98,7 @@ body {
   font-size: 80px;
   line-height: 110%;
 }
+
 .article-text {
   margin-top: 50px;
   display: flex;
@@ -84,9 +108,9 @@ body {
   font-size: 18px;
   line-height: 160%;
 }
+
 .learnmore-button {
   text-decoration: none;
-  padding-left: 30px;
   margin-top: 66px;
   width: 210px;
   height: 60px;
@@ -102,7 +126,9 @@ body {
   font-weight: normal;
   font-size: 18px;
   line-height: 160%;
+  justify-content: center;
 }
+
 .learnmore-button:hover {
   cursor: pointer;
   background-color: teal;
@@ -115,6 +141,7 @@ body {
 .request {
   display: flex;
 }
+
 .main-request {
   background: #fedd00;
   border-radius: 50px;
@@ -122,17 +149,20 @@ body {
   margin: 0 auto;
   display: flex;
   max-width: 1319px;
+  padding: 90px 90px 30px 90px;
 }
+
 .request-title {
-  padding-top: 95px;
-  padding-right: 45px;
-  padding-bottom: 30px;
+  /* padding-top: 95px; */
+  /* padding-right: 45px; */
+  /* padding-bottom: 30px; */
   max-width: 475px;
   font-style: normal;
   font-weight: bold;
   font-size: 40px;
   line-height: 130%;
 }
+
 .request-text {
   padding-top: 45px;
   display: flex;
@@ -152,9 +182,11 @@ body {
   font-size: 40px;
   line-height: 130%;
 }
+
 .services-title {
   text-align: center;
 }
+
 .services-text {
   margin: 0 auto;
   margin-bottom: 83px;
@@ -167,6 +199,7 @@ body {
   line-height: 160%;
   text-align: center;
 }
+
 .services-navigation {
   display: flex;
   max-width: 740px;
@@ -174,9 +207,9 @@ body {
   align-items: center;
   justify-content: space-between;
 }
+
 .services-nav {
   text-decoration: none;
-  padding-left: 30px;
   margin-top: 40px;
   margin-left: 20px;
   width: 170px;
@@ -185,7 +218,7 @@ body {
   text-align: center;
   align-items: center;
   letter-spacing: 0.005em;
-  background: #ffe600;
+  border: 3px solid #ffe600;
   box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
   border-radius: 50px;
   margin-bottom: 100px;
@@ -193,7 +226,22 @@ body {
   font-weight: normal;
   font-size: 18px;
   line-height: 160%;
+  justify-content: center;
 }
+
+.services-navigation .r-tabs-state-active {
+  background: #ffe600;
+}
+
+.services-nav a {
+  text-decoration: none;
+  color: #333;
+}
+
+.r-tabs .r-tabs-accordion-title {
+  display: none;
+}
+
 .services-top {
   display: flex;
   margin: 0 auto;
@@ -201,15 +249,18 @@ body {
   max-width: 1080px;
   justify-content: space-between;
 }
+
 .services-discription {
   display: inline-block;
   padding-left: 50px;
   padding-right: 5px;
 }
+
 .servicesblock {
   background-image: url(../img/servicesbg.png);
   background-size: cover;
 }
+
 h3 {
   font-family: Roboto;
   font-style: normal;
@@ -217,6 +268,7 @@ h3 {
   font-size: 24px;
   line-height: 130%;
 }
+
 .services-discription-text {
   font-family: Roboto;
   font-style: normal;
@@ -226,10 +278,12 @@ h3 {
   padding-bottom: 50px;
   padding-top: 35px;
 }
+
 .servicesblock {
   display: flex;
   width: 458px;
 }
+
 .service-price {
   font-family: Roboto;
   font-style: normal;
@@ -248,29 +302,30 @@ Reviews*/
   background: #fedd00;
   border-radius: 50px;
 }
-.reviews-main {
-  margin-left: 150px;
-}
+
+.reviews-main {padding: 40px 90px 0px 90px;}
+
 .reviews-title {
-  padding-top: 100px;
-  padding-bottom: 70px;
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
   font-size: 40px;
   line-height: 130%;
 }
+
 .reviews-img {
   padding-bottom: 130px;
 }
 
 /* Maps*/
+
 .map {
   margin-top: 150px;
   margin-bottom: 70px;
 }
 
 /* Footer*/
+
 .footer {
   max-width: 1120px;
   margin: 0 auto;
@@ -280,13 +335,16 @@ Reviews*/
   display: flex;
   justify-content: space-between;
 }
+
 .footerblock {
   margin-left: 25px;
 }
+
 .footerbtn {
   display: flex;
   margin-left: 35px;
 }
+
 .footer-button {
   text-decoration: none;
   padding-left: 30px;
@@ -303,7 +361,9 @@ Reviews*/
   font-weight: normal;
   font-size: 18px;
   line-height: 160%;
+  border: none;
 }
+
 .footerrequest {
   text-decoration: none;
   color: black;
@@ -313,6 +373,7 @@ Reviews*/
   display: block;
   margin-top: 35px;
 }
+
 .copyright {
   display: flex;
   justify-content: space-between;
@@ -320,5 +381,35 @@ Reviews*/
   margin-bottom: 30px;
 }
 
+
+/* Tabs */
+.r-tabs .r-tabs-tab {
+  list-style: none;
+}
+
+.r-tabs .r-tabs-panel {
+  display: none;
+}
+
+.r-tabs .r-tabs-accordion-title {
+  display: none;
+}
+
+.r-tabs .r-tabs-panel.r-tabs-state-active {
+  display: block;
+}
+
+/* Accordion responsive breakpoint */
+@media only screen and (max-width: 768px) {
+  .r-tabs .r-tabs-nav {
+      display: none;
+  }
+
+  .r-tabs .r-tabs-accordion-title {
+      display: block;
+  }
+}
+
 /*Media*/
+
 @media (max-width: 700px);
