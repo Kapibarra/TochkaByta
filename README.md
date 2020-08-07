@@ -1,2 +1,0 @@
-# TochkaByta
-my first project
