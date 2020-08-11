@@ -457,3 +457,52 @@ Reviews*/
     padding-right: 35px;
   }
 }
+
+@media (max-width: 320px) {
+  .webpage {
+    max-width: 320px;
+  }
+  .header {
+    max-width: 100%;
+    margin-left: 10px;
+  }
+  .navigation {
+    display: flex;
+    margin: 15px 0;
+  }
+  .wrapper-contacts {
+    margin: 15px 30px;
+  }
+  .wrapper {
+    display: block;
+  }
+  .content-title {
+    max-width: 320px;
+    font-size: 30px;
+  }
+  .requestimg {
+    max-width: 320px;
+  }
+  .request-title {
+    max-width: 320px;
+    max-width: 100%;
+  }
+  .main-request {
+    padding: 15px 15px;
+  }
+  .reviews-main {
+    padding: 15px 15px;
+  }
+  .reviews-img {
+  max-width: 100%;
+  padding: 25px 25px;
+  }
+  .reviews-title {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .footerbtn {
+    display: none;
+  }
+}
