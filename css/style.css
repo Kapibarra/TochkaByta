@@ -10,6 +10,10 @@ body {
   margin: 0 auto;
   color: #333;
 }
+.webpage {
+  max-width: 1120px;
+  margin: 0 auto;
+}
 
 html {
   scroll-behavior: smooth;
@@ -303,7 +307,9 @@ Reviews*/
   border-radius: 50px;
 }
 
-.reviews-main {padding: 40px 90px 0px 90px;}
+.reviews-main {
+  padding: 40px 90px 0px 90px;
+}
 
 .reviews-title {
   font-family: Roboto;
@@ -381,8 +387,8 @@ Reviews*/
   margin-bottom: 30px;
 }
 
-
 /* Tabs */
+
 .r-tabs .r-tabs-tab {
   list-style: none;
 }
@@ -400,16 +406,54 @@ Reviews*/
 }
 
 /* Accordion responsive breakpoint */
+
 @media only screen and (max-width: 768px) {
   .r-tabs .r-tabs-nav {
-      display: none;
+    display: none;
   }
 
   .r-tabs .r-tabs-accordion-title {
-      display: block;
+    display: block;
   }
 }
 
 /*Media*/
 
-@media (max-width: 700px);
+@media (max-width: 768px) {
+  .webpage {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .header {
+    margin: 30px 25px;
+  }
+  .wrapper {
+    max-width: 100%;
+  }
+  .navigation {
+    display: block;
+  }
+  .main-article {
+    max-width: 100%;
+    padding-left: 40px;
+  }
+  .main-request {
+    max-width: 100%;
+  }
+  .services {
+    display: none;
+  }
+
+  .main-request {
+    display: block;
+  }
+
+  .footerbtn {
+    display: block;
+    padding-right: 25px;
+  }
+  .copyright {
+    padding-left: 30px;
+    padding-right: 35px;
+  }
+}
