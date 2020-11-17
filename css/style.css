@@ -83,7 +83,10 @@ html {
 }
 
 .request-button:hover {
-    box-shadow: 5px 8px 8px rgba(75, 93, 104, 0.7)
+    cursor: pointer;
+    transition: all 500ms;
+    background: #594eff;
+    box-shadow: 5px 9px 9px rgba(75, 93, 104, 0.9);
 }
 
 .button-arrow {
@@ -98,7 +101,7 @@ html {
     margin: 0 auto;
     margin-bottom: 43px;
     margin-top: 101px;
-    max-width: 1319px;
+    max-width: 1120px;
     background-image: url(/img/articleimage.png);
     min-height: 800px;
     background-repeat: no-repeat;
@@ -149,11 +152,15 @@ html {
     justify-content: center;
 }
 
+.learnmore-button a {
+    text-decoration: none;
+}
+
 .learnmore-button:hover {
     cursor: pointer;
-    background-color: teal;
-    transition: 1300ms;
-    color: turquoise;
+    transition: all 500ms;
+    background: #594eff;
+    box-shadow: 5px 9px 9px rgba(75, 93, 104, 0.9);
 }
 
 
@@ -392,7 +399,10 @@ Reviews*/
 }
 
 .footer-button:hover {
-    box-shadow: 5px 8px 8px rgba(75, 93, 104, 0.7)
+    cursor: pointer;
+    transition: all 500ms;
+    background: #594eff;
+    box-shadow: 5px 9px 9px rgba(75, 93, 104, 0.9);
 }
 
 .footerrequest {
