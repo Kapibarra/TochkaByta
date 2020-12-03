@@ -6,7 +6,7 @@ body {
     max-width: 1920px;
     width: 100%;
     box-sizing: border-box;
-    font-size: 16px;
+    font-size: 18px;
     font-family: Roboto, sans-serif;
     line-height: 1.2;
     margin: 0 auto;
@@ -42,12 +42,13 @@ html {
 }
 
 .navigation {
-    display: flex;
+    display: none;
     justify-content: space-between;
 }
 
 .nav {
     display: flex;
+    flex-direction: row;
     margin-left: 30px;
     text-decoration: none;
 }
@@ -74,12 +75,12 @@ html {
     letter-spacing: 0.005em;
     background: #ffffff;
     box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
+    border: 1px solid rgba(75, 93, 104, 0.5);
     border-radius: 50px;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
     line-height: 160%;
-    border: none;
 }
 
 .request-button:hover {
@@ -108,12 +109,6 @@ html {
     background-position: right;
 }
 
-
-/* .main-content {
-  background-image: url(/img/articleimage.png);
-  background-size: cover;
-} */
-
 .content-title {
     max-width: 658px;
     display: flex;
@@ -141,10 +136,10 @@ html {
     text-align: center;
     align-items: center;
     letter-spacing: 0.005em;
-    background: #ffe600;
+    border: 1px solid rgba(75, 93, 104, 0.5);
+    background: #ffffff;
     box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
     border-radius: 50px;
-    margin-bottom: 300px;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -158,7 +153,7 @@ html {
 
 .learnmore-button:hover {
     cursor: pointer;
-    transition: all 500ms;
+    transition: all 300ms;
     background: #594eff;
     box-shadow: 5px 9px 9px rgba(75, 93, 104, 0.9);
 }
@@ -181,9 +176,6 @@ html {
 }
 
 .request-title {
-    /* padding-top: 95px; */
-    /* padding-right: 45px; */
-    /* padding-bottom: 30px; */
     max-width: 475px;
     font-style: normal;
     font-weight: bold;
@@ -235,6 +227,10 @@ html {
     margin: 0 auto;
     align-items: center;
     justify-content: space-between;
+}
+
+.services-img {
+    max-width: 150px;
 }
 
 .services-nav {
@@ -388,6 +384,7 @@ Reviews*/
     margin-left: 35px;
     align-items: center;
     letter-spacing: 0.005em;
+    border: 1px solid rgba(75, 93, 104, 0.5);
     background: #ffffff;
     box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
     border-radius: 50px;
@@ -395,7 +392,6 @@ Reviews*/
     font-weight: normal;
     font-size: 18px;
     line-height: 160%;
-    border: none;
 }
 
 .footer-button:hover {
@@ -417,9 +413,17 @@ Reviews*/
 
 .copyright {
     display: flex;
+    margin: 0 auto;
+    text-align: center;
     justify-content: space-between;
     padding-top: 30px;
     margin-bottom: 30px;
+    margin-bottom: 70px;
+}
+
+.copyright-text {
+    margin: 0 auto;
+    text-align: center;
 }
 
 
@@ -457,6 +461,9 @@ Reviews*/
 /*Media*/
 
 @media (max-width: 768px) {
+    .body {
+        margin: 10px;
+    }
     .webpage {
         max-width: 100%;
         margin: 0 auto;
@@ -474,28 +481,58 @@ Reviews*/
         max-width: 100%;
         padding-left: 40px;
     }
-    .main-request {
-        max-width: 100%;
+    .content-title {
+        max-width: 320px;
+        font-size: 30px;
     }
-    /* .main-request {
-        display: block;
-    } */
+    .main-request {
+        width: 100%;
+        margin: 0 auto;
+        max-width: 700px;
+    }
+    .requestimg {
+        width: 50%;
+    }
+    .r-tabs-anchor {
+        color: #333333;
+        text-decoration: none !important;
+    }
     .services-top {
         display: block;
         width: 100%;
     }
+    .services-container {
+        width: 100%;
+        max-width: 700px;
+        display: block;
+    }
     #responsiveTab {
         width: 100%;
-        max-width: 250px;
+        max-width: 550px;
         margin: 0 auto;
         color: black
     }
+    .r-tabs-accordion-title {
+        color: #333333;
+        text-align: center;
+        text-decoration: none !important;
+    }
+    .r-tabs-accordion-title:visited {
+        color: #333333;
+    }
     .servicesblock {
         margin: 0 auto;
+        margin-top: 45px;
+    }
+    .footer-logo {
+        display: flex;
+        margin: 0 auto;
+        text-align: center;
+        flex-direction: column;
     }
     .footerbtn {
-        display: block;
-        padding-right: 25px;
+        margin: 0 auto;
+        text-align: center;
     }
     .footer-button {
         margin-top: 15px;
@@ -503,6 +540,7 @@ Reviews*/
     .copyright {
         padding-left: 30px;
         padding-right: 35px;
+        margin-bottom: 70px;
     }
 }
 
@@ -510,12 +548,26 @@ Reviews*/
     .webpage {
         max-width: 320px;
     }
+    .wrapper {
+        margin: 0 auto;
+    }
     .header {
         max-width: 100%;
         margin-left: 10px;
     }
+    .wrapper-logo {
+        margin: 0 auto;
+    }
+    .services-img {
+        display: none;
+    }
+    .servicesblock {
+        width: 280px;
+    }
     .navigation {
-        display: flex;
+        display: none;
+        width: 100%;
+        max-width: 300px;
         margin: 15px 0;
     }
     .wrapper-contacts {
@@ -548,6 +600,9 @@ Reviews*/
         max-width: 100%;
         padding: 25px 25px;
     }
+    .copyright {
+        margin-bottom: 70px;
+    }
     .reviews-title {
         margin: 0 auto;
         text-align: center;
@@ -555,4 +610,281 @@ Reviews*/
     .footerbtn {
         display: none;
     }
+}
+
+
+/*
+=====
+DEPENDENCES
+=====
+*/
+
+
+/* The component will reset button browser styles */
+
+.r-button {
+    --uirButtonBackgroundColor: var(--rButtonBackgroundColor, transparent);
+    --uirButtonPadding: var(--rButtonPadding, var(--rButtonPaddingTop, 0) var(--rButtonPaddingRight, 0) var(--rButtonPaddingBottom, 0) var(--rButtonPaddingLeft, 0));
+    --uirButtonBorderWidth: var(--rButtonBorderWidth, 0);
+    --uirButtonBorderStyle: var(--rButtonBorderStyle, solid);
+    --uirButtonBorderColor: var(--rButtonBorderColor, currentColor);
+    --uirButtonFontFamily: var(--rButtonFontFamily, inherit);
+    --uirButtonFontSize: var(--rButtonFontSize, inherit);
+    --uirButtonColor: var(--rButtonColor);
+    background-color: var(--uirButtonBackgroundColor);
+    padding: var(--uirButtonPadding);
+    border-width: var(--uirButtonBorderWidth);
+    border-style: var(--uirButtonBorderStyle);
+    border-color: var(--uirButtonBorderColor);
+    cursor: pointer;
+    font-family: var(--uirButtonFontFamily);
+    font-size: var(--uirButtonFontSize);
+}
+
+.r-button::-moz-focus-inner,
+.r-button[type="button"]::-moz-focus-inner,
+.r-button[type="reset"]::-moz-focus-inner,
+.r-button[type="submit"]::-moz-focus-inner {
+    /* Remove the inner border and padding in Firefox. */
+    border-style: none;
+    padding: 0;
+}
+
+
+/* The component will reset browser's styles of link */
+
+.r-link {
+    --uirLinkDisplay: var(--rLinkDisplay, inline-flex);
+    --uirLinkTextColor: var(--rLinkTextColor);
+    --uirLinkTextDecoration: var(--rLinkTextDecoration, none);
+    display: var(--uirLinkDisplay) !important;
+    color: var(--uirLinkTextColor) !important;
+    text-decoration: var(--uirLinkTextDecoration) !important;
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(12, 18, 22);
+}
+
+
+/* The component will reset browser's styles of list */
+
+.r-list {
+    --uirListPaddingLeft: var(--rListPaddingLeft, 0);
+    --uirListMarginTop: var(--rListMarginTop, 0);
+    --uirListMarginBottom: var(--rListMarginBottom, 0);
+    --uirListListStyle: var(--rListListStyle, none);
+    padding-left: var(--uirListPaddingLeft) !important;
+    margin-top: var(--uirListMarginTop) !important;
+    margin-bottom: var(--uirListMarginBottom) !important;
+    list-style: var(--uirListListStyle) !important;
+}
+
+
+/* Basic styles of the hamburger component */
+
+.m-hamburger {
+    --uiHamburgerThickness: var(--hamburgerThickness, 4px);
+    display: var(--hamburgerDisplay, inline-flex);
+    width: var(--hamburgerWidth, 28px);
+    height: var(--hamburgerHeight, 20px);
+    position: relative;
+}
+
+.m-hamburger::before,
+.m-hamburger::after,
+.m-hamburger__label {
+    width: 100%;
+    height: var(--uiHamburgerThickness);
+    border-radius: var(--hamburgerBorderRadius, 5px);
+    background-color: var(--hamburgerBackgroundColor, currentColor);
+    position: absolute;
+    left: 0;
+}
+
+.m-hamburger::before,
+.m-hamburger::after {
+    content: "";
+}
+
+.m-hamburger::before {
+    top: 0;
+}
+
+.m-hamburger::after {
+    bottom: 0;
+}
+
+.m-hamburger__label {
+    /* The calculation of middle hamburger button line position */
+    top: calc(50% - calc(var(--uiHamburgerThickness) / 2));
+}
+
+
+/* helper to hide elements that are available only for screen readers. */
+
+.screen-reader {
+    width: var(--screenReaderWidth, 1px) !important;
+    height: var(--screenReaderHeight, 1px) !important;
+    padding: var(--screenReaderPadding, 0) !important;
+    border: var(--screenReaderBorder, none) !important;
+    position: var(--screenReaderPosition, absolute) !important;
+    clip: var(--screenReaderClip, rect(1px, 1px, 1px, 1px)) !important;
+    overflow: var(--screenReaderOverflow, hidden) !important;
+}
+
+.menu {
+    --uiMenuCircleSize: var(--menuCircleSize, 6.25rem);
+    --uiMenuCircleOffset: var(--menuCircleOffset, 1rem);
+    --uiMenuCircleHeight: calc(var(--uiMenuCircleSize) / 2);
+    --uiMenuCircleBackgroundColor: var(--menuCircleBackgroundColor, currentColor);
+    --uiMenuHamburgerWidth: var(--menuHamburgerWidth, 1.75rem);
+    --uiMenuHamburgerHeight: var(--menuHamburgerHeight, 1.25rem);
+    --rButtonPaddingTop: calc(var(--uiMenuCircleHeight) - var(--uiMenuHamburgerHeight) - var(--uiMenuCircleOffset));
+    --hamburgerWidth: var(--uiMenuHamburgerWidth);
+    --hamburgerHeight: var(--uiMenuHamburgerHeight);
+    --hamburgerBackgroundColor: var(--menuHamburgerBackgroundColor, #fff);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: var(--menuZindex, 9998);
+}
+
+.menu__nav {
+    box-sizing: border-box;
+    width: 100%;
+    height: 0;
+    transition: opacity .2s ease-out;
+    opacity: 0;
+    display: flex;
+    align-items: flex-end;
+    z-index: 2;
+}
+
+.menu__list {
+    width: 100%;
+    max-height: 100%;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.menu__toggle {
+    box-sizing: border-box;
+    width: var(--uiMenuCircleSize);
+    height: var(--uiMenuCircleHeight);
+    flex: none;
+    position: relative;
+    z-index: 0;
+}
+
+.menu__toggle::before {
+    /*
+    1. The font-size property is used to simplify calculations of the element's sizes and position
+    2. The negative value for the bottom property need for hiding half of circle. 
+    */
+    content: "";
+    width: 1em;
+    height: 1em;
+    font-size: var(--uiMenuCircleSize);
+    /* 1 */
+    background-color: var(--uiMenuCircleBackgroundColor);
+    border-radius: 50%;
+    position: absolute;
+    bottom: -.5em;
+    /* 2 */
+    left: calc(50% - .5em);
+    z-index: -1;
+    will-change: width, height;
+    transition: transform .25s cubic-bezier(0.04, -0.1, 0.29, 0.98), width .25s cubic-bezier(0.04, -0.1, 0.29, 0.98), height .25s cubic-bezier(0.04, -0.1, 0.29, 0.98);
+}
+
+
+/* styles of hamburger's animation */
+
+.m-hamburger::before,
+.m-hamburger::after,
+.m-hamburger__label {
+    transition-timing-function: ease;
+    transition-duration: .15s;
+}
+
+.m-hamburger::before,
+.m-hamburger::after {
+    transition-property: transform;
+}
+
+.m-hamburger__label {
+    transition-property: transform, opacity;
+}
+
+
+/*
+  =====
+  MENU STATES
+  =====
+  */
+
+.menu__toggle:focus {
+    outline: var(--menuHaburgerOutlineOWidth, 2px) solid var(--menuHaburgerOutlineColor);
+    outline-offset: var(--menuHaburgerOutlineOffset, 5px);
+}
+
+.menu_activated {
+    height: 100%;
+}
+
+.menu_activated .menu__nav {
+    flex-grow: 1;
+    opacity: 1;
+    will-change: opacity;
+    transition-duration: .2s;
+    transition-delay: .3s;
+}
+
+.menu_activated .menu__toggle::before {
+    width: 100vmax;
+    height: 100vmax;
+    transform: translate3d(-50vh, -50vh, 0) scale(5);
+    transition-duration: 1s;
+}
+
+.menu:not(.menu_activated) .menu__list {
+    display: none;
+}
+
+.menu_activated .m-hamburger::before {
+    top: 50%;
+    transform: translate3d(0, -50%, 0) rotate(45deg);
+}
+
+.menu_activated .m-hamburger::after {
+    transform: translate3d(0, -50%, 0) rotate(135deg);
+    top: 50%;
+}
+
+.menu_activated .m-hamburger__label {
+    transform: rotate(-45deg) translate3d(-.285em, -.3em, 0);
+    opacity: 0;
+}
+
+
+/*
+  =====
+  SETTINGS
+  =====
+  */
+
+ :root {
+    --colorWhite: #fff;
+    --colorMain: #4557bb;
+    --menuCircleBackgroundColor: var(--colorMain);
+    --menuHamburgerBackgroundColor: var(--colorWhite);
+    --menuHaburgerOutlineColor: var(--colorMain);
+}
+
+.menu_activated {
+    --menuHaburgerOutlineColor: var(--colorWhite);
 }
