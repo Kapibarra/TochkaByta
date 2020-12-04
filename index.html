@@ -28,6 +28,18 @@
                     <div class="nav"><a href="#reviews">Отзывы</a></div>
                     <div class="nav"><a href="#footer">Контакты</a></div>
                 </div>
+                <div class="overlay">
+                    <nav class="overlayMenu">
+                        <ul role="menu">
+                            <li><a href="#about" role="menuitem">О Нас</a></li>
+                            <li><a href="#services" role="menuitem">Услуги</a></li>
+                            <li><a href="#reviews" role="menuitem">Отзывы</a></li>
+                            <li><a href="#footer" role="menuitem">Контакты</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="navBurger" role="navigation" id="navToggle"></div>
                 <div class="wrapper-contacts">
                     <div class="wrapper-adress">Ул.Крылатские холмы 35к3</div>
                     <div class="wrapper-phone">8-999-999-99-99</div>
@@ -35,14 +47,14 @@
                 </div>
             </div>
         </header>
-        <main class="main-article">
+        <main class="main-article" id="about">
             <div class="main-content">
                 <h1 class="content-title">Качественный ремонт техники</h1>
                 <a class="article-text">
-            Data Warehouse is a data storage area that has been tested for
-            security, so you can store your data here safely but not be afraid
-            of being stolen by others.
-          </a>
+                    Data Warehouse is a data storage area that has been tested for
+                    security, so you can store your data here safely but not be afraid
+                    of being stolen by others.
+                </a>
                 <a type="button" class="learnmore-button" href="#">Узнать больше</a>
             </div>
         </main>
@@ -57,238 +69,169 @@
                             you registered in this Data Warehouse.
                         </p>
                         <button class="request-button">
-                <a class="footerrequest" href="#"> Онлайн запись</a>
-                <img class="button-arrow" src="/img/button_arrow.svg" />
-              </button>
+                            <a class="footerrequest" href="#"> Онлайн запись</a>
+                            <img class="button-arrow" src="/img/button_arrow.svg" />
+                        </button>
                     </div>
                 </div>
             </div>
         </div>
-        <section class="services" id="services">
+        <div class="tabs-section" id="responsiveTab">
             <div class="services-title">Наши услуги</div>
             <div class="services-text">
                 Мы оказываем только качественные услуги в кратикие сроки и заботимся о долговечности произведенных работ.
             </div>
-
-            <div class="services-conteiner" id="responsiveTab">
-                <ul class="services-navigation">
-                    <li type="button" class="services-nav">
-                        <a href="#tab-1">Телефоны</a>
-                    </li>
-                    <li type="button" class="services-nav">
-                        <a href="#tab-2">Компьютеры</a>
-                    </li>
-                    <li type="button" class="services-nav">
-                        <a href="#tab-3">Ноутбуки</a>
-                    </li>
-                    <li type="button" class="services-nav">
-                        <a href="#tab-4">Техника</a>
-                    </li>
-                </ul>
-
-                <div class="tab" id="tab-1">
-                    <div class="services-top">
-                        <div class="servicesblock">
-                            <img class="services-img" src="/img/services.png" />
-                            <div class="services-discription">
-                                <h3>Замена экрана</h3>
-                                <a class="services-discription-text">
-                    Don’t worry if your data is very large, the Data Warehoue
-                    provides a search engine.</a
-                  >
-                  <h3 class="service-price">От 5000 ₽</h3>
-                            </div>
-                        </div>
-                        <div class="servicesblock">
-                            <img class="services-img" src="/img/services.png" />
-                            <div class="services-discription">
-                                <h3>Замена экрана</h3>
-                                <a class="services-discription-text">
-                    Don’t worry if your data is very large, the Data Warehoue
-                    provides a search engine.</a
-                  >
-                  <h3 class="service-price">От 5000 ₽</h3>
-                            </div>
-                        </div>
+            <ul class="services-navigation">
+                <li type="button" class="services-nav">
+                    <a href="#tab-1">Телефоны</a>
+                </li>
+                <li type="button" class="services-nav">
+                    <a href="#tab-2">Компьютеры</a>
+                </li>
+                <li type="button" class="services-nav">
+                    <a href="#tab-3">Ноутбуки</a>
+                </li>
+                <li type="button" class="services-nav">
+                    <a href="#tab-4">Техника</a>
+                </li>
+            </ul>
+            <div class="tab-group" id="tab-1">
+                <div class="tab-card-group">
+                    <div class="card">
+                        <img src="./img/services.png" class="services-img">
+                        <h2 class="servisec-name-title">Замена экрана</h2>
+                        <span class="services-card-text">Don’t worry if your data is very large, the Data Warehoue
+                            provides a search engine.</span>
+                        <h1>от 5000р</h1>
                     </div>
-                    <div class="services-top">
-                        <div class="servicesblock">
-                            <img class="services-img" src="/img/services.png" />
-                            <div class="services-discription">
-                                <h3>Замена экрана</h3>
-                                <a class="services-discription-text">
-                    Don’t worry if your data is very large, the Data Warehoue
-                    provides a search engine.</a
-                  >
-                  <h3 class="service-price">От 5000 ₽</h3>
-                            </div>
-                        </div>
-                        <div class="servicesblock">
-                            <img class="services-img" src="/img/services.png" />
-                            <div class="services-discription">
-                                <h3>Замена экрана</h3>
-                                <a class="services-discription-text">
-                    Don’t worry if your data is very large, the Data Warehoue
-                    provides a search engine.</a
-                  >
-                  <h3 class="service-price">От 5000 ₽</h3>
-                            </div>
-                        </div>
+                    <div class="card">
+                        <img src="./img/services.png" class="services-img">
+                        <h2 class="servisec-name-title">Замена экрана</h2>
+                        <span class="services-card-text">Don’t worry if your data is very large, the Data Warehoue
+                            provides a search engine.</span>
+                        <h1>от 5000р</h1>
                     </div>
                 </div>
-
-                <div class="tab" id="tab-2">
-                    <div class="services-top">
-                        <div class="servicesblock">
-                            <img class="services-img" src="/img/services.png" />
-                            <div class="services-discription">
-                                <h3>Замена экрана2</h3>
-                                <a class="services-discription-text">
-                    Don’t worry if your data is very large, the Data Warehoue
-                    provides a search engine.</a
-                  >
-                  <h3 class="service-price">От 5000 ₽</h3>
-                            </div>
-                        </div>
-                        <div class="servicesblock">
-                            <img class="services-img" src="/img/services.png" />
-                            <div class="services-discription">
-                                <h3>Замена экрана2</h3>
-                                <a class="services-discription-text">
-                    Don’t worry if your data is very large, the Data Warehoue
-                    provides a search engine.</a
-                  >
-                  <h3 class="service-price">От 5000 ₽</h3>
-                            </div>
-                        </div>
+                <div class="tab-card-group">
+                    <div class="card">
+                        <img src="./img/services.png" class="services-img">
+                        <h2 class="servisec-name-title">Замена экрана</h2>
+                        <span class="services-card-text">Don’t worry if your data is very large, the Data Warehoue
+                            provides a search engine.</span>
+                        <h1>от 5000р</h1>
                     </div>
-                    <div class="services-top">
-                        <div class="servicesblock">
-                            <img class="services-img" src="/img/services.png" />
-                            <div class="services-discription">
-                                <h3>Замена экрана</h3>
-                                <a class="services-discription-text">
-                    Don’t worry if your data is very large, the Data Warehoue
-                    provides a search engine.</a
-                  >
-                  <h3 class="service-price">От 5000 ₽</h3>
-                            </div>
-                        </div>
-                        <div class="servicesblock">
-                            <img class="services-img" src="/img/services.png" />
-                            <div class="services-discription">
-                                <h3>Замена экрана</h3>
-                                <a class="services-discription-text">
-                    Don’t worry if your data is very large, the Data Warehoue
-                    provides a search engine.</a
-                  >
-                  <h3 class="service-price">От 5000 ₽</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="tab" id="tab-3">
-                    <div class="services-top">
-                        <div class="servicesblock">
-                            <img class="services-img" src="/img/services.png" />
-                            <div class="services-discription">
-                                <h3>Замена экрана3</h3>
-                                <a class="services-discription-text">
-                    Don’t worry if your data is very large, the Data Warehoue
-                    provides a search engine.</a
-                  >
-                  <h3 class="service-price">От 5000 ₽</h3>
-                            </div>
-                        </div>
-                        <div class="servicesblock">
-                            <img class="services-img" src="/img/services.png" />
-                            <div class="services-discription">
-                                <h3>Замена экрана3</h3>
-                                <a class="services-discription-text">
-                    Don’t worry if your data is very large, the Data Warehoue
-                    provides a search engine.</a
-                  >
-                  <h3 class="service-price">От 5000 ₽</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="services-top">
-                        <div class="servicesblock">
-                            <img class="services-img" src="/img/services.png" />
-                            <div class="services-discription">
-                                <h3>Замена экрана</h3>
-                                <a class="services-discription-text">
-                    Don’t worry if your data is very large, the Data Warehoue
-                    provides a search engine.</a
-                  >
-                  <h3 class="service-price">От 5000 ₽</h3>
-                            </div>
-                        </div>
-                        <div class="servicesblock">
-                            <img class="services-img" src="/img/services.png" />
-                            <div class="services-discription">
-                                <h3>Замена экрана</h3>
-                                <a class="services-discription-text">
-                    Don’t worry if your data is very large, the Data Warehoue
-                    provides a search engine.</a
-                  >
-                  <h3 class="service-price">От 5000 ₽</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="tab" id="tab-4">
-                    <div class="services-top">
-                        <div class="servicesblock">
-                            <img class="services-img" src="/img/services.png" />
-                            <div class="services-discription">
-                                <h3>Замена экрана4</h3>
-                                <a class="services-discription-text">
-                    Don’t worry if your data is very large, the Data Warehoue
-                    provides a search engine.</a
-                  >
-                  <h3 class="service-price">От 5000 ₽</h3>
-                            </div>
-                        </div>
-                        <div class="servicesblock">
-                            <img class="services-img" src="/img/services.png" />
-                            <div class="services-discription">
-                                <h3>Замена экрана4</h3>
-                                <a class="services-discription-text">
-                    Don’t worry if your data is very large, the Data Warehoue
-                    provides a search engine.</a
-                  >
-                  <h3 class="service-price">От 5000 ₽</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="services-top">
-                        <div class="servicesblock">
-                            <img class="services-img" src="/img/services.png" />
-                            <div class="services-discription">
-                                <h3>Замена экрана</h3>
-                                <a class="services-discription-text">
-                    Don’t worry if your data is very large, the Data Warehoue
-                    provides a search engine.</a
-                  >
-                  <h3 class="service-price">От 5000 ₽</h3>
-                            </div>
-                        </div>
-                        <div class="servicesblock">
-                            <img class="services-img" src="/img/services.png" />
-                            <div class="services-discription">
-                                <h3>Замена экрана</h3>
-                                <a class="services-discription-text">
-                    Don’t worry if your data is very large, the Data Warehoue
-                    provides a search engine.</a
-                  >
-                  <h3 class="service-price">От 5000 ₽</h3>
-                            </div>
-                        </div>
+                    <div class="card">
+                        <img src="./img/services.png" class="services-img">
+                        <h2 class="servisec-name-title">Замена экрана</h2>
+                        <span class="services-card-text">Don’t worry if your data is very large, the Data Warehoue
+                            provides a search engine.</span>
+                        <h1>от 5000р</h1>
                     </div>
                 </div>
             </div>
-        </section>
+            <div class="tab-group" id="tab-2">
+                <div class="tab-card-group">
+                    <div class="card">
+                        <img src="./img/services.png" class="services-img">
+                        <h2 class="servisec-name-title">Замена экрана</h2>
+                        <span class="services-card-text">Don’t worry if your data is very large, the Data Warehoue
+                            provides a search engine.</span>
+                        <h1>от 5000р</h1>
+                    </div>
+                    <div class="card">
+                        <img src="./img/services.png" class="services-img">
+                        <h2 class="servisec-name-title">Замена экрана</h2>
+                        <span class="services-card-text">Don’t worry if your data is very large, the Data Warehoue
+                            provides a search engine.</span>
+                        <h1>от 5000р</h1>
+                    </div>
+                </div>
+                <div class="tab-card-group">
+                    <div class="card">
+                        <img src="./img/services.png" class="services-img">
+                        <h2 class="servisec-name-title">Замена экрана</h2>
+                        <span class="services-card-text">Don’t worry if your data is very large, the Data Warehoue
+                            provides a search engine.</span>
+                        <h1>от 5000р</h1>
+                    </div>
+                    <div class="card">
+                        <img src="./img/services.png" class="services-img">
+                        <h2 class="servisec-name-title">Замена экрана</h2>
+                        <span class="services-card-text">Don’t worry if your data is very large, the Data Warehoue
+                            provides a search engine.</span>
+                        <h1>от 5000р</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-group" id="tab-3">
+                <div class="tab-card-group">
+                    <div class="card">
+                        <img src="./img/services.png" class="services-img">
+                        <h2 class="servisec-name-title">Замена экрана</h2>
+                        <span class="services-card-text">Don’t worry if your data is very large, the Data Warehoue
+                            provides a search engine.</span>
+                        <h1>от 5000р</h1>
+                    </div>
+                    <div class="card">
+                        <img src="./img/services.png" class="services-img">
+                        <h2 class="servisec-name-title">Замена экрана</h2>
+                        <span class="services-card-text">Don’t worry if your data is very large, the Data Warehoue
+                            provides a search engine.</span>
+                        <h1>от 5000р</h1>
+                    </div>
+                </div>
+                <div class="tab-card-group">
+                    <div class="card">
+                        <img src="./img/services.png" class="services-img">
+                        <h2 class="servisec-name-title">Замена экрана</h2>
+                        <span class="services-card-text">Don’t worry if your data is very large, the Data Warehoue
+                            provides a search engine.</span>
+                        <h1>от 5000р</h1>
+                    </div>
+                    <div class="card">
+                        <img src="./img/services.png" class="services-img">
+                        <h2 class="servisec-name-title">Замена экрана</h2>
+                        <span class="services-card-text">Don’t worry if your data is very large, the Data Warehoue
+                            provides a search engine.</span>
+                        <h1>от 5000р</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-group" id="tab-4">
+                <div class="tab-card-group">
+                    <div class="card">
+                        <img src="./img/services.png" class="services-img">
+                        <h2 class="servisec-name-title">Замена экрана</h2>
+                        <span class="services-card-text">Don’t worry if your data is very large, the Data Warehoue
+                            provides a search engine.</span>
+                        <h1>от 5000р</h1>
+                    </div>
+                    <div class="card">
+                        <img src="./img/services.png" class="services-img">
+                        <h2 class="servisec-name-title">Замена экрана</h2>
+                        <span class="services-card-text">Don’t worry if your data is very large, the Data Warehoue
+                            provides a search engine.</span>
+                        <h1>от 5000р</h1>
+                    </div>
+                </div>
+                <div class="tab-card-group">
+                    <div class="card">
+                        <img src="./img/services.png" class="services-img">
+                        <h2 class="servisec-name-title">Замена экрана</h2>
+                        <span class="services-card-text">Don’t worry if your data is very large, the Data Warehoue
+                            provides a search engine.</span>
+                        <h1>от 5000р</h1>
+                    </div>
+                    <div class="card">
+                        <img src="./img/services.png" class="services-img">
+                        <h2 class="servisec-name-title">Замена экрана</h2>
+                        <span class="services-card-text">Don’t worry if your data is very large, the Data Warehoue
+                            provides a search engine.</span>
+                        <h1>от 5000р</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
         <section class="reviews" id="reviews">
             <div class="reviews-main">
                 <div>
@@ -316,117 +259,60 @@
             <div class="footerblock">
                 <div class="footer-text">
                     <a>Москва, ул. Крылатские холмы 36к1 <br />
-              Ежедневно с 10:00 до 20:00
+                        Ежедневно с 10:00 до 20:00
+                    </a>
+                </div>
+                <div class="footer-contacts">
+                    info@tocka.bita <br /> 8 (495) 444-55-66
+                </div>
+            </div>
+            <div class="footerbtn">
+                <button class="footer-button">
+                    <a class="footerrequest" href="#"> Онлайн запись</a>
+                    <img class="button-arrow" src="/img/button_arrow.svg" />
+                </button>
+            </div>
+        </div>
+        <div class="copyright">
+            <a class="copyright-text">© Точка быта™, 2020. Все права защищены.<br />
+                Инн: 21479524.
             </a>
-                            </div>
-                            <div class="footer-contacts">
-                                info@tocka.bita <br /> 8 (495) 444-55-66
-                            </div>
-                        </div>
-                        <div class="footerbtn">
-                            <button class="footer-button">
-            <a class="footerrequest" href="#"> Онлайн запись</a>
-            <img class="button-arrow" src="/img/button_arrow.svg" />
-          </button>
-                        </div>
-                    </div>
-                    <div class="copyright">
-                        <a class="copyright-text">© Точка быта™, 2020. Все права защищены.<br />
-          Инн: 21479524.
-        </a>
-                    </div>
-        </section>
+        </div>
+    </section>
 
-        <div class="menu">
-            <nav class="menu__nav">
-                <ul class="menu__list r-list">
-                    <li class="menu__group">
-                        <a href="#top" class="menu__link r-link">Главная</a>
-                    </li>
-                    <li class="menu__group">
-                        <a href="#about" class="menu__link r-link">О Нас</a>
-                    </li>
-                    <li class="menu__group">
-                        <a href="#services" class="menu__link r-link">Услуги</a>
-                    </li>
-                    <li class="menu__group">
-                        <a href="#reviews" class="menu__link r-link">Отзывы</a>
-                    </li>
-                </ul>
-            </nav>
-            <button class="menu__toggle r-button" type="button">
-              <span class="menu__hamburger m-hamburger">
-                <span class="m-hamburger__label">
-                  <span class="menu__screen-reader screen-reader">Open menu</span>
 
-        <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 
-        <script src="https://cdn.jsdelivr.net/npm/responsive-tabs@1.6.3/js/jquery.responsiveTabs.js"></script>
 
-        <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 
-        <script type="text/javascript">
-            $(document).ready(function() {
-                $("#responsiveTab").responsiveTabs({
-                    rotate: false,
-                    startCollapsed: "accordion",
-                    collapsible: "accordion",
-                    setHash: true,
-                });
-                $(".reviews-img").slick();
-                (function(){
-  'use strict';
+    <script src="https://cdn.jsdelivr.net/npm/responsive-tabs@1.6.3/js/jquery.responsiveTabs.js"></script>
 
-  class Menu {
-    constructor(settings) {
-      this.menuNode = settings.menuNode;
-      this.state = false;
-      this.menuStateTextNode = settings.menuStateTextNode || this.menuNode.querySelector('.menu__screen-reader');
-      this.menuOpenedText = settings.menuOpenedText || 'Open menu';
-      this.menuClosedText = settings.menuClosedText || 'Close menu';
-    }
-    
-    changeState(state) {
-      return this.state = !state;
-    }
-    
-    changeStateText(state, node) {
-      let text = (state !== true) ? this.menuOpenedText : this.menuClosedText;
-      
-      node.textContent = text;
-      return text; 
-    }
-           
-    toggleMenuState(className) {   
-      
-      let state;
-      
-      if (typeof className !== 'string' || className.length === 0) {
-        return console.log('you did not give the class for the toggleState function');
-      } 
-            
-      state = this.changeState(this.state);
-      
-      this.changeStateText(state, this.menuStateTextNode);
-      this.menuNode.classList.toggle(className);
-      
-      return state;  
-    }
-  }
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
-  const jsMenuNode = document.querySelector('.menu');
-  const demoMenu = new Menu ({
-    menuNode: jsMenuNode
-  });
-  
-  function callMenuToggle(event) {
-    demoMenu.toggleMenuState('menu_activated');
-  }
-  
-  jsMenuNode.querySelector('.menu__toggle').addEventListener('click', callMenuToggle);
-})();
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("#responsiveTab").responsiveTabs({
+                rotate: false,
+                startCollapsed: "accordion",
+                collapsible: "accordion",
+                setHash: true,
             });
-        </script>
+            $(".reviews-img").slick();
+
+            $("#navToggle").click(function() {
+                $(this).toggleClass("active");
+                $(".overlay").toggleClass("open");
+                // this line ▼ prevents content scroll-behind
+                $("body").toggleClass("locked");
+            });
+
+            $(".overlay a").click(function() {
+                $("#navToggle").toggleClass("active");
+                $(".overlay").toggleClass("open");
+                $("body").toggleClass("locked");
+            });
+        });
+    </script>
 </body>
 
 </html>

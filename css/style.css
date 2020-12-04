@@ -42,7 +42,8 @@ html {
 }
 
 .navigation {
-    display: none;
+    display: flex;
+    flex-direction: row;
     justify-content: space-between;
 }
 
@@ -54,7 +55,11 @@ html {
 }
 
 .nav a:hover {
-    color: #505bf7
+    color: #505bf7;
+    transform: scale(1.1);
+    font-weight: bold;
+    text-decoration: underline;
+    transition: all 300ms;
 }
 
 .nav a {
@@ -206,6 +211,7 @@ html {
 
 .services-title {
     text-align: center;
+    margin-top: 50px
 }
 
 .services-text {
@@ -429,6 +435,56 @@ Reviews*/
 
 /* Tabs */
 
+.tabs-section {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.tab-group {
+    margin: 0 auto;
+}
+
+.tab-card-group {
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.card {
+    width: 50%;
+    max-width: 450px;
+    padding: 20px;
+    border: 3px solid rgba(255, 217, 0, 0.9);
+    background-color: rgba(0, 88, 252, 0.7);
+    border-radius: 50px;
+    margin: 15px;
+}
+
+.services-img {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 150px;
+}
+
+.servisec-name-title {
+    text-align: center;
+}
+
+.services-card-text {
+    width: 100%;
+    max-width: 450px;
+}
+
+.services-title {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+
+/*TABS@*/
+
 .r-tabs .r-tabs-tab {
     list-style: none;
 }
@@ -454,6 +510,10 @@ Reviews*/
     }
     .r-tabs .r-tabs-accordion-title {
         display: block;
+        font-weight: bold;
+        border: 1px solid rgba(255, 217, 0, 0.9);
+        border-radius: 10px;
+        background-color: rgba(0, 88, 252, 0.7);
     }
 }
 
@@ -475,7 +535,7 @@ Reviews*/
         max-width: 100%;
     }
     .navigation {
-        display: block;
+        display: none;
     }
     .main-article {
         max-width: 100%;
@@ -491,7 +551,7 @@ Reviews*/
         max-width: 700px;
     }
     .requestimg {
-        width: 50%;
+        display: none;
     }
     .r-tabs-anchor {
         color: #333333;
@@ -541,6 +601,18 @@ Reviews*/
         padding-left: 30px;
         padding-right: 35px;
         margin-bottom: 70px;
+    }
+}
+
+@media (max-width: 520px) {
+    .tab-card-group {
+        display: flex;
+        flex-direction: column;
+    }
+    .card {
+        width: 70%;
+        display: block;
+        margin: 15px auto;
     }
 }
 
@@ -619,272 +691,173 @@ DEPENDENCES
 =====
 */
 
-
-/* The component will reset button browser styles */
-
-.r-button {
-    --uirButtonBackgroundColor: var(--rButtonBackgroundColor, transparent);
-    --uirButtonPadding: var(--rButtonPadding, var(--rButtonPaddingTop, 0) var(--rButtonPaddingRight, 0) var(--rButtonPaddingBottom, 0) var(--rButtonPaddingLeft, 0));
-    --uirButtonBorderWidth: var(--rButtonBorderWidth, 0);
-    --uirButtonBorderStyle: var(--rButtonBorderStyle, solid);
-    --uirButtonBorderColor: var(--rButtonBorderColor, currentColor);
-    --uirButtonFontFamily: var(--rButtonFontFamily, inherit);
-    --uirButtonFontSize: var(--rButtonFontSize, inherit);
-    --uirButtonColor: var(--rButtonColor);
-    background-color: var(--uirButtonBackgroundColor);
-    padding: var(--uirButtonPadding);
-    border-width: var(--uirButtonBorderWidth);
-    border-style: var(--uirButtonBorderStyle);
-    border-color: var(--uirButtonBorderColor);
-    cursor: pointer;
-    font-family: var(--uirButtonFontFamily);
-    font-size: var(--uirButtonFontSize);
-}
-
-.r-button::-moz-focus-inner,
-.r-button[type="button"]::-moz-focus-inner,
-.r-button[type="reset"]::-moz-focus-inner,
-.r-button[type="submit"]::-moz-focus-inner {
-    /* Remove the inner border and padding in Firefox. */
-    border-style: none;
-    padding: 0;
-}
-
-
-/* The component will reset browser's styles of link */
-
-.r-link {
-    --uirLinkDisplay: var(--rLinkDisplay, inline-flex);
-    --uirLinkTextColor: var(--rLinkTextColor);
-    --uirLinkTextDecoration: var(--rLinkTextDecoration, none);
-    display: var(--uirLinkDisplay) !important;
-    color: var(--uirLinkTextColor) !important;
-    text-decoration: var(--uirLinkTextDecoration) !important;
-    font-size: 40px;
-    font-weight: bold;
-    color: rgb(12, 18, 22);
-}
-
-
-/* The component will reset browser's styles of list */
-
-.r-list {
-    --uirListPaddingLeft: var(--rListPaddingLeft, 0);
-    --uirListMarginTop: var(--rListMarginTop, 0);
-    --uirListMarginBottom: var(--rListMarginBottom, 0);
-    --uirListListStyle: var(--rListListStyle, none);
-    padding-left: var(--uirListPaddingLeft) !important;
-    margin-top: var(--uirListMarginTop) !important;
-    margin-bottom: var(--uirListMarginBottom) !important;
-    list-style: var(--uirListListStyle) !important;
-}
-
-
-/* Basic styles of the hamburger component */
-
-.m-hamburger {
-    --uiHamburgerThickness: var(--hamburgerThickness, 4px);
-    display: var(--hamburgerDisplay, inline-flex);
-    width: var(--hamburgerWidth, 28px);
-    height: var(--hamburgerHeight, 20px);
-    position: relative;
-}
-
-.m-hamburger::before,
-.m-hamburger::after,
-.m-hamburger__label {
-    width: 100%;
-    height: var(--uiHamburgerThickness);
-    border-radius: var(--hamburgerBorderRadius, 5px);
-    background-color: var(--hamburgerBackgroundColor, currentColor);
-    position: absolute;
-    left: 0;
-}
-
-.m-hamburger::before,
-.m-hamburger::after {
-    content: "";
-}
-
-.m-hamburger::before {
-    top: 0;
-}
-
-.m-hamburger::after {
-    bottom: 0;
-}
-
-.m-hamburger__label {
-    /* The calculation of middle hamburger button line position */
-    top: calc(50% - calc(var(--uiHamburgerThickness) / 2));
-}
-
-
-/* helper to hide elements that are available only for screen readers. */
-
-.screen-reader {
-    width: var(--screenReaderWidth, 1px) !important;
-    height: var(--screenReaderHeight, 1px) !important;
-    padding: var(--screenReaderPadding, 0) !important;
-    border: var(--screenReaderBorder, none) !important;
-    position: var(--screenReaderPosition, absolute) !important;
-    clip: var(--screenReaderClip, rect(1px, 1px, 1px, 1px)) !important;
-    overflow: var(--screenReaderOverflow, hidden) !important;
-}
-
-.menu {
-    --uiMenuCircleSize: var(--menuCircleSize, 6.25rem);
-    --uiMenuCircleOffset: var(--menuCircleOffset, 1rem);
-    --uiMenuCircleHeight: calc(var(--uiMenuCircleSize) / 2);
-    --uiMenuCircleBackgroundColor: var(--menuCircleBackgroundColor, currentColor);
-    --uiMenuHamburgerWidth: var(--menuHamburgerWidth, 1.75rem);
-    --uiMenuHamburgerHeight: var(--menuHamburgerHeight, 1.25rem);
-    --rButtonPaddingTop: calc(var(--uiMenuCircleHeight) - var(--uiMenuHamburgerHeight) - var(--uiMenuCircleOffset));
-    --hamburgerWidth: var(--uiMenuHamburgerWidth);
-    --hamburgerHeight: var(--uiMenuHamburgerHeight);
-    --hamburgerBackgroundColor: var(--menuHamburgerBackgroundColor, #fff);
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.navBurger {
     position: fixed;
-    bottom: 0;
-    left: 0;
-    z-index: var(--menuZindex, 9998);
-}
-
-.menu__nav {
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+    background: #111;
     box-sizing: border-box;
-    width: 100%;
-    height: 0;
-    transition: opacity .2s ease-out;
-    opacity: 0;
-    display: flex;
-    align-items: flex-end;
-    z-index: 2;
+    background-clip: content-box;
+    width: 30px;
+    height: 25px;
+    border-top: 11px solid transparent;
+    border-bottom: 11px solid transparent;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+    z-index: 1001;
 }
 
-.menu__list {
-    width: 100%;
-    max-height: 100%;
-    overflow-y: auto;
-    -webkit-overflow-scrolling: touch;
-}
-
-.menu__toggle {
-    box-sizing: border-box;
-    width: var(--uiMenuCircleSize);
-    height: var(--uiMenuCircleHeight);
-    flex: none;
-    position: relative;
-    z-index: 0;
-}
-
-.menu__toggle::before {
-    /*
-    1. The font-size property is used to simplify calculations of the element's sizes and position
-    2. The negative value for the bottom property need for hiding half of circle. 
-    */
+.navBurger:before,
+.navBurger:after {
     content: "";
-    width: 1em;
-    height: 1em;
-    font-size: var(--uiMenuCircleSize);
-    /* 1 */
-    background-color: var(--uiMenuCircleBackgroundColor);
-    border-radius: 50%;
     position: absolute;
-    bottom: -.5em;
-    /* 2 */
-    left: calc(50% - .5em);
-    z-index: -1;
-    will-change: width, height;
-    transition: transform .25s cubic-bezier(0.04, -0.1, 0.29, 0.98), width .25s cubic-bezier(0.04, -0.1, 0.29, 0.98), height .25s cubic-bezier(0.04, -0.1, 0.29, 0.98);
+    background: #111;
+    height: 2px;
+    width: 100%;
+    right: 0;
+    z-index: 1001;
+    will-change: rotate;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
 }
 
-
-/* styles of hamburger's animation */
-
-.m-hamburger::before,
-.m-hamburger::after,
-.m-hamburger__label {
-    transition-timing-function: ease;
-    transition-duration: .15s;
+.navBurger:before {
+    top: -10px;
+    width: 100%;
 }
 
-.m-hamburger::before,
-.m-hamburger::after {
-    transition-property: transform;
+.navBurger:after {
+    bottom: -10px;
+    width: 100%;
 }
 
-.m-hamburger__label {
-    transition-property: transform, opacity;
+.navBurger.active {
+    background: transparent;
+    background-clip: content-box;
 }
 
-
-/*
-  =====
-  MENU STATES
-  =====
-  */
-
-.menu__toggle:focus {
-    outline: var(--menuHaburgerOutlineOWidth, 2px) solid var(--menuHaburgerOutlineColor);
-    outline-offset: var(--menuHaburgerOutlineOffset, 5px);
+.navBurger.active:before {
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg);
+    top: 0;
+    background: #eee;
+    width: 110%;
 }
 
-.menu_activated {
+.navBurger.active:after {
+    bottom: 0;
+    -webkit-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+    background: #eee;
+    width: 110%;
+}
+
+.overlay {
+    position: fixed;
+    background: #fedd00;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transform-origin: right top;
+    transform: scale(0);
+    visibility: hidden;
+    transition: all 0.4s ease-in-out;
+    overflow: hidden;
+}
+
+.overlay.open {
+    opacity: 1;
+    z-index: 1000;
+    visibility: visible;
+    transform: scale(1);
+}
+
+.overlay.open li {
+    display: block;
+    animation: fadeInRight 0.4s cubic-bezier(0.42, 0.83, 0.7, 1.5) forwards;
+    animation-delay: 0.4s;
+    transform: rotate(-7deg);
+    transform-origin: right bottom;
+}
+
+.overlay.open li:nth-of-type(2) {
+    animation-delay: 0.5s;
+}
+
+.overlay.open li:nth-of-type(3) {
+    animation-delay: 0.6s;
+}
+
+.overlay.open li:nth-of-type(4) {
+    animation-delay: 0.7s;
+}
+
+.overlay.open li:nth-of-type(5) {
+    animation-delay: 0.8s;
+}
+
+.overlayMenu {
+    position: absolute;
+    text-align: right;
+    right: 10vw;
+    bottom: 10vw;
+}
+
+.overlayMenu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    display: block;
+    position: relative;
     height: 100%;
 }
 
-.menu_activated .menu__nav {
-    flex-grow: 1;
-    opacity: 1;
-    will-change: opacity;
-    transition-duration: .2s;
-    transition-delay: .3s;
-}
-
-.menu_activated .menu__toggle::before {
-    width: 100vmax;
-    height: 100vmax;
-    transform: translate3d(-50vh, -50vh, 0) scale(5);
-    transition-duration: 1s;
-}
-
-.menu:not(.menu_activated) .menu__list {
-    display: none;
-}
-
-.menu_activated .m-hamburger::before {
-    top: 50%;
-    transform: translate3d(0, -50%, 0) rotate(45deg);
-}
-
-.menu_activated .m-hamburger::after {
-    transform: translate3d(0, -50%, 0) rotate(135deg);
-    top: 50%;
-}
-
-.menu_activated .m-hamburger__label {
-    transform: rotate(-45deg) translate3d(-.285em, -.3em, 0);
+.overlayMenu ul li {
+    display: block;
+    position: relative;
     opacity: 0;
+    width: 100%;
 }
 
-
-/*
-  =====
-  SETTINGS
-  =====
-  */
-
- :root {
-    --colorWhite: #fff;
-    --colorMain: #4557bb;
-    --menuCircleBackgroundColor: var(--colorMain);
-    --menuHamburgerBackgroundColor: var(--colorWhite);
-    --menuHaburgerOutlineColor: var(--colorMain);
+.overlayMenu ul li a {
+    display: inline-block;
+    border: 1px solid rgba(255, 255, 255, 0.09);
+    color: #fff;
+    text-decoration: none;
+    font-size: 30px;
+    padding: 10px 40px 10px 40px;
+    margin: 5px 0;
+    transition: 0.2s;
+    background: #2a3140;
 }
 
-.menu_activated {
-    --menuHaburgerOutlineColor: var(--colorWhite);
+.overlayMenu ul li a:hover,
+.overlayMenu ul li a:active,
+.overlayMenu ul li a:focus {
+    transform: translateX(-2px);
+    padding-left: 80px;
+    border: 1px solid white;
+}
+
+.locked {
+    overflow: hidden;
+}
+
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        left: 50px;
+    }
+    100% {
+        opacity: 1;
+        left: 0;
+        transform: rotate(0deg);
+    }
 }
