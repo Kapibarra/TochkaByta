@@ -685,6 +685,7 @@ Reviews*/
     .reviews-img {
         max-width: 100%;
         padding: 25px 25px;
+        padding-bottom: 40px;
     }
     .copyright {
         margin-bottom: 70px;
