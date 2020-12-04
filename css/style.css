@@ -602,6 +602,14 @@ Reviews*/
         padding-right: 35px;
         margin-bottom: 70px;
     }
+    .reviews-main {
+        padding: 15px 15px;
+    }
+    .reviews-title {
+        margin: 0 auto;
+        text-align: center;
+        padding: 20px;
+    }
 }
 
 @media (max-width: 520px) {
@@ -664,6 +672,12 @@ Reviews*/
     }
     .main-request {
         padding: 15px 15px;
+    }
+    .reviews-title {
+        margin: 0 auto;
+        font-size: 25px;
+        text-align: center;
+        padding: 10px;
     }
     .reviews-main {
         padding: 15px 15px;
