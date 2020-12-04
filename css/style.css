@@ -41,6 +41,10 @@ html {
     justify-content: space-between;
 }
 
+.wrapper-contacts {
+    padding-left: 15px;
+}
+
 .navigation {
     display: flex;
     flex-direction: row;
@@ -582,6 +586,9 @@ Reviews*/
     .r-tabs-accordion-title:visited {
         color: #333333;
     }
+    .r-tabs-anchor {
+        font-size: 40px;
+    }
     .servicesblock {
         margin: 0 auto;
         margin-top: 45px;
@@ -674,6 +681,12 @@ Reviews*/
     }
     .main-request {
         padding: 15px 15px;
+    }
+    .r-tabs-accordion-title {
+        font-size: 55px;
+    }
+    .r-tabs-anchor {
+        font-size: 40px;
     }
     .reviews-title {
         margin: 0 auto;
