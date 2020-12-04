@@ -456,7 +456,9 @@ Reviews*/
     max-width: 450px;
     padding: 20px;
     border: 3px solid rgba(255, 217, 0, 0.9);
-    background-color: rgba(0, 88, 252, 0.7);
+    background-color: rgba(255, 217, 0, 0.9);
+    -webkit-box-shadow: 0px 0px 11px 6px rgba(255, 217, 0, 0.5);
+    box-shadow: 0px 0px 11px 6px rgba(255, 217, 0, 0.5);
     border-radius: 50px;
     margin: 15px;
 }
@@ -850,7 +852,7 @@ DEPENDENCES
     padding: 10px 40px 10px 40px;
     margin: 5px 0;
     transition: 0.2s;
-    background: #2a3140;
+    background: #1b2842;
 }
 
 .overlayMenu ul li a:hover,
@@ -859,6 +861,9 @@ DEPENDENCES
     transform: translateX(-2px);
     padding-left: 80px;
     border: 1px solid white;
+    border-radius: 1px;
+    transition: all 300ms;
+    background: rgba(0, 88, 252, 0.9);
 }
 
 .locked {
