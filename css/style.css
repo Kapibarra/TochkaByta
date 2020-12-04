@@ -745,7 +745,7 @@ DEPENDENCES
     -webkit-transform: rotate(135deg);
     transform: rotate(135deg);
     top: 0;
-    background: #eee;
+    background: rgb(0, 0, 0);
     width: 110%;
 }
 
@@ -753,7 +753,7 @@ DEPENDENCES
     bottom: 0;
     -webkit-transform: rotate(-135deg);
     transform: rotate(-135deg);
-    background: #eee;
+    background: rgb(0, 0, 0);
     width: 110%;
 }
 
