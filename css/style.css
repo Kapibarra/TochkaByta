@@ -133,11 +133,11 @@ html {
 }
 
 .article-text {
+    word-wrap: break-word;
     margin-top: 50px;
     display: flex;
-    max-width: 380px;
-    font-style: normal;
-    font-weight: normal;
+    max-width: 300px;
+    font-weight: bold;
     font-size: 18px;
     line-height: 160%;
 }
@@ -200,10 +200,10 @@ html {
 
 .request-text {
     padding-top: 45px;
+    padding-left: 10px;
     display: flex;
     margin-right: 93px;
-    font-style: normal;
-    font-weight: normal;
+    font-weight: bold;
     font-size: 18px;
     line-height: 160%;
 }
@@ -246,7 +246,9 @@ html {
 }
 
 .services-img {
-    max-width: 150px;
+    margin: 0 auto;
+    max-width: 250px;
+    min-height: 300px;
 }
 
 .services-nav {
